@@ -10,14 +10,14 @@ export default function Navbar() {
   return (
     <div
       className={`${
-        pathName === "/home"
+        pathName === "/"
           ? "/block"
           : pathName === "/kompleksAudit"
           ? "block"
           : "hidden"
       }`}
     >
-      <div className="flex justify-between gap-10 p-4">
+      <div className="flex justify-between gap-10 p-4 px-">
         <div className="flex items-center gap-3 flex-1">
           <button>
             <RxHamburgerMenu
@@ -48,11 +48,11 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <div>
             <button>
-              <FaBell size={24} className="text-[#508afe] cursor-pointer" />
+              <FaBell size={24} className="text-[#0099ff] cursor-pointer" />
             </button>
           </div>
           <div>
-            <button className="w-10 h-10 p-2 rounded-full bg-[#508afe] cursor-pointer">
+            <button className="w-10 h-10 p-2 rounded-full bg-[#0099ff] text-white cursor-pointer">
               <FiUser size={24} />
             </button>
           </div>

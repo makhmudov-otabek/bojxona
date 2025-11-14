@@ -13,7 +13,7 @@ const sharpChartNumber = ({ value, cx, cy }: Needle) => {
   return (
     <>
       <text
-        x={180}
+        x={145}
         y={140}
         textAnchor="middle"
         dominantBaseline="middle"
@@ -40,14 +40,14 @@ const chartData = [
 ];
 
 function SharpChart() {
-  const cx = 180;
+  const cx = 140;
   const cy = 150;
-  const iR = 125;
-  const oR = 140;
+  const iR = 100;
+  const oR = 110;
   const value = chartData[0].value;
 
   return (
-    <PieChart width={350} height={200} className="">
+    <PieChart width={"100%"} height={200} className="">
       <Pie
         width={350}
         height={150}
@@ -86,12 +86,12 @@ function SharpChart() {
 export default function HomeBottom() {
   return (
     <div className="flex justify-between gap-4 p-4">
-      <div className="flex-3 flex justify-between gap-3 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
+      <div className="flex-9 flex justify-between gap-3 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
         <div className="flex-1">
           <div className="relative overflow-x-auto bg-neutral-primary-soft shadow-xs rounded-base ">
             <div className="w-full">
               <h3 className="text-lg font-semibold ml-3 text-slate-800">
-                Team Members and Roles
+                Xududlar
               </h3>
             </div>
             <div className="relative flex flex-col w-full h-full overflow-scroll text-gray-700 bg-white shadow-md rounded-lg bg-clip-border">
@@ -100,22 +100,22 @@ export default function HomeBottom() {
                   <tr>
                     <th className="p-4 border-b border-slate-300 bg-slate-50">
                       <p className="block text-sm font-normal leading-none text-slate-500">
-                        Name
+                        Nomi
                       </p>
                     </th>
                     <th className="p-4 border-b border-slate-300 bg-slate-50">
                       <p className="block text-sm font-normal leading-none text-slate-500">
-                        Role
+                        Soni
                       </p>
                     </th>
                     <th className="p-4 border-b border-slate-300 bg-slate-50">
                       <p className="block text-sm font-normal leading-none text-slate-500">
-                        Email
+                        Ijobiy
                       </p>
                     </th>
                     <th className="p-4 border-b border-slate-300 bg-slate-50">
                       <p className="block text-sm font-normal leading-none text-slate-500">
-                        Location
+                        Summasi
                       </p>
                     </th>
                   </tr>
@@ -123,80 +123,58 @@ export default function HomeBottom() {
                 <tbody>
                   <tr className="hover:bg-slate-50">
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">
-                        John Michael
-                      </p>
+                      <p className="block text-sm text-slate-800">Buxoro</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
                       <p className="block text-sm text-slate-800">Manager</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">
-                        john.michael@example.com
-                      </p>
+                      <p className="block text-sm text-slate-800">88</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">
-                        New York, USA
-                      </p>
+                      <p className="block text-sm text-slate-800">100</p>
                     </td>
                   </tr>
                   <tr className="hover:bg-slate-50">
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">
-                        Alexa Liras
-                      </p>
+                      <p className="block text-sm text-slate-800">Navoiy</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
                       <p className="block text-sm text-slate-800">Developer</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">
-                        alexa.liras@example.com
-                      </p>
+                      <p className="block text-sm text-slate-800">87</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">
-                        San Francisco, USA
-                      </p>
+                      <p className="block text-sm text-slate-800">200</p>
                     </td>
                   </tr>
                   <tr className="hover:bg-slate-50">
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">
-                        Laurent Perrier
-                      </p>
+                      <p className="block text-sm text-slate-800">Toshkent</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
                       <p className="block text-sm text-slate-800">Executive</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">
-                        laurent.perrier@example.com
-                      </p>
+                      <p className="block text-sm text-slate-800">56</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">
-                        Paris, France
-                      </p>
+                      <p className="block text-sm text-slate-800">159</p>
                     </td>
                   </tr>
                   <tr className="hover:bg-slate-50">
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">
-                        Michael Levi
-                      </p>
+                      <p className="block text-sm text-slate-800">Andijon</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
                       <p className="block text-sm text-slate-800">Developer</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">
-                        michael.levi@example.com
-                      </p>
+                      <p className="block text-sm text-slate-800">56</p>
                     </td>
                     <td className="p-4 border-b border-slate-200">
-                      <p className="block text-sm text-slate-800">London, UK</p>
+                      <p className="block text-sm text-slate-800">120</p>
                     </td>
                   </tr>
                 </tbody>
@@ -205,7 +183,7 @@ export default function HomeBottom() {
           </div>
         </div>
       </div>
-      <div className="flex-1 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
+      <div className="flex-3 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
         <SharpChart />
         <div className="flex justify-between items-center mb-4">
           <p className="flex items-center gap-2">

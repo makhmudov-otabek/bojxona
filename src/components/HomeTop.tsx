@@ -16,21 +16,21 @@ const data = [
     name: "Undirilgan",
     value: firstRingValue,
     fill: "#0099ff",
-    sum: "82mlrd",
+    sum: "82 mlrd",
     label: `${firstRingValue}%`,
   },
   {
     name: "Nazoratda",
     value: secondRingValue,
     fill: "#ff9900",
-    sum: "44mlrd",
+    sum: "44 mlrd",
     label: `${secondRingValue}%`,
   },
   {
     name: "Bartaraf etilgan",
     value: thirdRingValue,
     fill: "#009999",
-    sum: "35mlrd",
+    sum: "35 mlrd",
     label: `${thirdRingValue}%`,
   },
 ];
@@ -93,7 +93,7 @@ function PieChartWithPaddingAngle({
 export default function HomeTop() {
   return (
     <div className="flex justify-between gap-4 p-4">
-      <div className="flex-3 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)] flex justify-between">
+      <div className="flex-9 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)] flex justify-between">
         <div className="flex flex-col justify-between pr-4 border-r border-gray-300">
           <div className="flex gap-5 justify-between items-center">
             <p className="text-lg">Jami Summa</p>
@@ -106,13 +106,13 @@ export default function HomeTop() {
           return (
             <div
               key={item.name}
-              className={`flex-1 flex gap-5 justify-center items-center ${
+              className={`flex-1 flex gap-5 pr-1 justify-center items-center ${
                 idx + 1 < data.length ? "border-r border-gray-300" : ""
               }`}
             >
               <PieChartWithPaddingAngle item={item} />
               <div className="text-center h-full flex flex-col justify-between">
-                <p className={`text-[15px]`} style={{ color: item.fill }}>
+                <p className={`text-[13px]`} style={{ color: item.fill }}>
                   {item.name}
                 </p>
                 <p className="text-2xl">{item.sum}</p>
@@ -122,7 +122,7 @@ export default function HomeTop() {
           );
         })}
       </div>
-      <div className="flex-1 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
+      <div className="flex-3 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
         <div className="flex justify-between items-center w-full">
           <p>Sayyor audit</p>
           <HiDotsVertical />

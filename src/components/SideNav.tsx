@@ -28,7 +28,7 @@ function Top() {
 
 const menuItems = [
   {
-    href: "/home",
+    href: "/",
     label: "Bosh Sahifa",
     icon: <MdHome />,
   },
@@ -86,7 +86,10 @@ function NavMenu() {
     <div className="text-white pt-8">
       <ul>
         {menuItems.map((item) => {
-          const isActive = pathName.startsWith(item.href);
+          const isActive =
+            item.href === "/"
+              ? pathName === "/"
+              : pathName.startsWith(item.href);
           return (
             <li key={item.href}>
               <Link

@@ -1,5 +1,13 @@
-import Image from "next/image";
+import HomeBottom from "@/components/HomeBottom";
+import HomeMiddle from "@/components/HomeMiddle";
+import HomeTop from "@/components/HomeTop";
 
-export default function Home() {
-  return <div className=""></div>;
+export default function Dashboard() {
+  return (
+    <>
+      <HomeTop />
+      <HomeMiddle />
+      <HomeBottom />
+    </>
+  );
 }

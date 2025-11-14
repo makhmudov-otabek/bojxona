@@ -224,7 +224,7 @@ const sharpChartNumber = ({ value, cx, cy }: Needle) => {
 
   return (
     <text
-      x={180}
+      x={145}
       y={140}
       textAnchor="middle"
       dominantBaseline="middle"
@@ -250,17 +250,17 @@ const chartData = [
 ];
 
 function SharpChart() {
-  const cx = 180;
+  const cx = 140;
   const cy = 150;
-  const iR = 90;
-  const oR = 140;
+  const iR = 70;
+  const oR = 120;
   const value = chartData[0].value;
 
   return (
-    <PieChart width={350} height={200} className="">
+    <PieChart width={"100%"} height={200} className="">
       <Pie
-        width={350}
-        height={150}
+        width={10}
+        height={10}
         dataKey="value"
         startAngle={180}
         endAngle={0}
@@ -295,7 +295,7 @@ function SharpChart() {
 export default function HomeMiddle() {
   return (
     <div className="flex justify-between gap-4 p-4">
-      <div className="flex-3 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
+      <div className="flex-9 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
         <div className="flex justify-between items-center mb-4">
           <p>O`tkazilgan auditlar soni</p>
           <div className="flex gap-6">
@@ -311,7 +311,7 @@ export default function HomeMiddle() {
         </div>
         <AreaChartExample />
       </div>
-      <div className="flex-1 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
+      <div className="flex-3 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
         <div>
           <div className="flex justify-between items-center w-full">
             <p>Sayyor audit</p>

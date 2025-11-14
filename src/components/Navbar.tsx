@@ -12,7 +12,7 @@ export default function Navbar() {
       className={`${
         pathName === "/home"
           ? "/block"
-          : pathName === "/audit"
+          : pathName === "/kompleksAudit"
           ? "block"
           : "hidden"
       }`}
